@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Talha Calculator")
+st.set_page_config(page_title="Talha Calculator" ,  page_icon="🧮")
 
 
 st.title("Simple Calculator Web App")

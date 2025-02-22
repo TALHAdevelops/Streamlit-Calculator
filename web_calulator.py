@@ -1,6 +1,16 @@
 import streamlit as st
+import time
 
-st.set_page_config(page_title="Talha Calculator" ,  page_icon="🧮")
+st.set_page_config(page_title="Talha Calculator" ,  page_icon="🧮", layout="wide")
+
+with st.spinner("Processing..."):
+    progress_bar = st.progress(0)
+    
+    for percent in range(100):
+        time.sleep(0.05)
+        progress_bar.progress(percent + 1)
+
+st.success("Process Completed!")
 
 
 st.title("Simple Calculator Web App")

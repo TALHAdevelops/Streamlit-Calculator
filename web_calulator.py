@@ -1,20 +1,22 @@
 import streamlit as st
 
-# Streamlit UI
+st.set_page_config(page_title="Talha Calculator")
+
+
 st.title("Simple Calculator Web App")
 
-# User input for numbers
+# User input
 try:
     num1 = st.number_input("Enter first number:", step=1.0)
     num2 = st.number_input("Enter second number:", step=1.0)
 except ValueError:
     st.error("Invalid input! Please enter a valid number.")
 
-# Dropdown for selecting operation
+
 operation = st.selectbox("Select an operation:", 
                          ["Addition", "Subtraction", "Multiplication", "Division"])
 
-# Perform Calculation
+#Calculation
 if st.button("Calculate"):
     try:
         if operation == "Addition":

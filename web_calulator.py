@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.set_page_config(page_title="Talha Calculator" ,  page_icon="🧮", layout="wide")
+st.set_page_config(page_title="Talha Calculator" ,  page_icon="🧮")
 
 with st.spinner("Processing..."):
     progress_bar = st.progress(0)

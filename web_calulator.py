@@ -10,10 +10,11 @@ with st.spinner("Processing..."):
         time.sleep(0.05)
         progress_bar.progress(percent + 1)
 
-st.success("Process Completed!")
+st.success("Process Completed! Now Check out my web page")
 
 
 st.title("Simple Calculator Web App")
+st.caption("Created by ME(talha) with ❤️")
 
 # User input
 try:
